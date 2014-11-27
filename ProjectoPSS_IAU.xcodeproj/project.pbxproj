@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		521914821A26A47300DBD4ED /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 521914811A26A47300DBD4ED /* Images.xcassets */; };
 		52A798391A265C4800DD0CA9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A798381A265C4800DD0CA9 /* AppDelegate.swift */; };
 		52A7983B1A265C4800DD0CA9 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A7983A1A265C4800DD0CA9 /* FirstViewController.swift */; };
 		52A7983D1A265C4800DD0CA9 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A7983C1A265C4800DD0CA9 /* SecondViewController.swift */; };
 		52A798401A265C4800DD0CA9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52A7983E1A265C4800DD0CA9 /* Main.storyboard */; };
-		52A798421A265C4800DD0CA9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52A798411A265C4800DD0CA9 /* Images.xcassets */; };
 		52A798451A265C4800DD0CA9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52A798431A265C4800DD0CA9 /* LaunchScreen.xib */; };
 		52A798511A265C4900DD0CA9 /* ProjectoPSS_IAUTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A798501A265C4900DD0CA9 /* ProjectoPSS_IAUTests.swift */; };
 /* End PBXBuildFile section */
@@ -27,13 +27,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		521914811A26A47300DBD4ED /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../../../.Trash/Images.xcassets; sourceTree = "<group>"; };
 		52A798331A265C4800DD0CA9 /* ProjectoPSS_IAU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectoPSS_IAU.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52A798371A265C4800DD0CA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52A798381A265C4800DD0CA9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52A7983A1A265C4800DD0CA9 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		52A7983C1A265C4800DD0CA9 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		52A7983F1A265C4800DD0CA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		52A798411A265C4800DD0CA9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		52A798441A265C4800DD0CA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		52A7984A1A265C4900DD0CA9 /* ProjectoPSS_IAUTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProjectoPSS_IAUTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		52A7984F1A265C4900DD0CA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -82,8 +82,8 @@
 				52A798381A265C4800DD0CA9 /* AppDelegate.swift */,
 				52A7983A1A265C4800DD0CA9 /* FirstViewController.swift */,
 				52A7983C1A265C4800DD0CA9 /* SecondViewController.swift */,
+				521914811A26A47300DBD4ED /* Images.xcassets */,
 				52A7983E1A265C4800DD0CA9 /* Main.storyboard */,
-				52A798411A265C4800DD0CA9 /* Images.xcassets */,
 				52A798431A265C4800DD0CA9 /* LaunchScreen.xib */,
 				52A798361A265C4800DD0CA9 /* Supporting Files */,
 			);
@@ -195,9 +195,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				521914821A26A47300DBD4ED /* Images.xcassets in Resources */,
 				52A798401A265C4800DD0CA9 /* Main.storyboard in Resources */,
 				52A798451A265C4800DD0CA9 /* LaunchScreen.xib in Resources */,
-				52A798421A265C4800DD0CA9 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +411,7 @@
 				52A798561A265C4900DD0CA9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		52A798571A265C4900DD0CA9 /* Build configuration list for PBXNativeTarget "ProjectoPSS_IAUTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +420,7 @@
 				52A798591A265C4900DD0CA9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
