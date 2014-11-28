@@ -38,12 +38,6 @@
                                     <rect key="frame" x="240" y="278" width="120" height="120"/>
                                 </variation>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RightArrow-1" translatesAutoresizingMaskIntoConstraints="NO" id="8P9-ZP-Smh">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="240" y="278" width="120" height="120"/>
-                                </variation>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iO2-dd-DKj">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <color key="backgroundColor" red="0.16862745579999999" green="0.82352948189999997" blue="0.070588238540000001" alpha="1" colorSpace="deviceRGB"/>
@@ -76,28 +70,34 @@
                                     <rect key="frame" x="40" y="278" width="120" height="120"/>
                                 </variation>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RightArrow" translatesAutoresizingMaskIntoConstraints="NO" id="8P9-ZP-Smh">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="240" y="278" width="120" height="120"/>
+                                </variation>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="hNw-tP-y1s"/>
                                 <exclude reference="Ep8-BX-l9c"/>
-                                <exclude reference="8P9-ZP-Smh"/>
                                 <exclude reference="iO2-dd-DKj"/>
                                 <exclude reference="UQc-o5-8Ou"/>
                                 <exclude reference="FSe-4V-AXW"/>
                                 <exclude reference="b7Q-az-95j"/>
+                                <exclude reference="8P9-ZP-Smh"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="hNw-tP-y1s"/>
                                 <include reference="Ep8-BX-l9c"/>
-                                <include reference="8P9-ZP-Smh"/>
                                 <include reference="iO2-dd-DKj"/>
                                 <include reference="UQc-o5-8Ou"/>
                                 <include reference="FSe-4V-AXW"/>
                                 <include reference="b7Q-az-95j"/>
+                                <include reference="8P9-ZP-Smh"/>
                             </mask>
                         </variation>
                     </view>
@@ -171,7 +171,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="RightArrow-1" width="88" height="88"/>
+        <image name="RightArrow" width="88" height="88"/>
         <image name="arrow-40169_640" width="88" height="88"/>
         <image name="car" width="341" height="107"/>
         <image name="first" width="30" height="30"/>
