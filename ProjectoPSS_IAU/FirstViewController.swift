@@ -10,13 +10,12 @@ import UIKit
 
 class FirstViewController: UIViewController {
     
-    var x:CGFloat = 0
+    
     
     @IBOutlet weak var RightColor: UIImageView!
-    
     @IBOutlet weak var LeftColor: UIImageView!
     @IBOutlet weak var carColor: UIImageView!
-    @IBOutlet weak var carroImage: UIImageView!
+  
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,14 +27,50 @@ class FirstViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+        
+    }
+    
+    @IBAction func ChangeColor(sender: AnyObject) {
+        ChangeColorLeftTurn(100)
+        ChangeColorCarAccelarate(200)
+        ChangeColorRightTurn(300)
+    }
+    
+    func ChangeColorLeftTurn(speed:CGFloat){
+        UIView.animateWithDuration(0.2, animations:{
+            var vermelho:CGFloat = speed*2
+            var verde:CGFloat = 510-vermelho
+            let color = UIColor(red: (vermelho/255.0),green: (verde/255.0), blue: (0/255.0), alpha: 1.0)
+            self.LeftColor.backgroundColor = color})
+    }
+    
+    func ChangeColorRightTurn(speed:CGFloat){
+        UIView.animateWithDuration(0.2, animations:{
+            var vermelho:CGFloat = speed*2
+            var verde:CGFloat = 510-vermelho
+            let color = UIColor(red: (vermelho/255.0),green: (verde/255.0), blue: (0/255.0), alpha: 1.0)
+            self.RightColor.backgroundColor = color})
+        
+    }
+    
+    func ChangeColorCarAccelarate(speed:CGFloat){
+        UIView.animateWithDuration(0.2, animations:{
+            var vermelho:CGFloat = speed*2
+            var verde:CGFloat = 510-vermelho
+            let color = UIColor(red: (vermelho/255.0),green: (verde/255.0), blue: (0/255.0), alpha: 1.0)
+            self.carColor.backgroundColor = color})
+        
     }
     
     
-    func ChangeColor(speed:CGFloat,viewToChange:UIImageView){
-        var vermelho = speed
-        var verde = 255-vermelho
-        let color = UIColor(red: (vermelho/255.0),green: (verde/255.0), blue: (0/255.0), alpha: 1.0)
-        viewToChange.backgroundColor = color
+    func ChangeColorCarBreak(speed:CGFloat){
+        UIView.animateWithDuration(0.2, animations:{
+            var vermelho:CGFloat = speed*2
+            var verde:CGFloat = 510-vermelho
+            let color = UIColor(red: (vermelho/255.0),green: (verde/255.0), blue: (0/255.0), alpha: 1.0)
+            self.carColor.backgroundColor = color})
+        
     }
+
     
 }
