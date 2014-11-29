@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		521914821A26A47300DBD4ED /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 521914811A26A47300DBD4ED /* Images.xcassets */; };
+		52035C681A2975AD00A8FD52 /* images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52035C671A2975AD00A8FD52 /* images.xcassets */; };
 		52A45D621A290C32000BC533 /* arrow-40169_640.png in Resources */ = {isa = PBXBuildFile; fileRef = 52A45D611A290C32000BC533 /* arrow-40169_640.png */; };
 		52A45D641A290C37000BC533 /* RightArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 52A45D631A290C37000BC533 /* RightArrow.png */; };
 		52A45D661A290C93000BC533 /* car.png in Resources */ = {isa = PBXBuildFile; fileRef = 52A45D651A290C93000BC533 /* car.png */; };
@@ -30,7 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		521914811A26A47300DBD4ED /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../../../.Trash/Images.xcassets; sourceTree = "<group>"; };
+		52035C671A2975AD00A8FD52 /* images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = images.xcassets; sourceTree = "<group>"; };
 		52A45D611A290C32000BC533 /* arrow-40169_640.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow-40169_640.png"; sourceTree = "<group>"; };
 		52A45D631A290C37000BC533 /* RightArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RightArrow.png; sourceTree = "<group>"; };
 		52A45D651A290C93000BC533 /* car.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = car.png; sourceTree = "<group>"; };
@@ -91,7 +91,7 @@
 				52A798381A265C4800DD0CA9 /* AppDelegate.swift */,
 				52A7983A1A265C4800DD0CA9 /* FirstViewController.swift */,
 				52A7983C1A265C4800DD0CA9 /* SecondViewController.swift */,
-				521914811A26A47300DBD4ED /* Images.xcassets */,
+				52035C671A2975AD00A8FD52 /* images.xcassets */,
 				52A7983E1A265C4800DD0CA9 /* Main.storyboard */,
 				52A798431A265C4800DD0CA9 /* LaunchScreen.xib */,
 				52A798361A265C4800DD0CA9 /* Supporting Files */,
@@ -205,7 +205,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				52A45D661A290C93000BC533 /* car.png in Resources */,
-				521914821A26A47300DBD4ED /* Images.xcassets in Resources */,
+				52035C681A2975AD00A8FD52 /* images.xcassets in Resources */,
 				52A45D641A290C37000BC533 /* RightArrow.png in Resources */,
 				52A798401A265C4800DD0CA9 /* Main.storyboard in Resources */,
 				52A45D621A290C32000BC533 /* arrow-40169_640.png in Resources */,
