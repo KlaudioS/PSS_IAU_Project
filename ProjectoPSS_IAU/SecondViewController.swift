@@ -7,12 +7,23 @@
 //
 
 import UIKit
+import CoreLocation
 
 class SecondViewController: UIViewController {
+    
+    let gpsManager = CLLocationManager()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        if CLLocationManager.locationServicesEnabled() {
+            gpsManager.startUpdatingLocation()
+        }
+        if CLLocationManager.authorizationStatus() == .NotDetermined {
+            gpsManager.requestWhenInUseAuthorization()
+        }
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,6 +31,7 @@ class SecondViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    
 
 }
 
