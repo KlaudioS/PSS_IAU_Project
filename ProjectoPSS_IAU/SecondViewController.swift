@@ -24,6 +24,7 @@ class SecondViewController: UIViewController {
             gpsManager.requestWhenInUseAuthorization()
         }
         
+        
     }
 
     override func didReceiveMemoryWarning() {
