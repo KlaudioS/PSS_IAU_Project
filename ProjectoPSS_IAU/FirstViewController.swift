@@ -131,9 +131,9 @@ class FirstViewController: UIViewController {
     }
     
     @IBAction func ChangeColor(sender: AnyObject) {
-        ChangeColorLeftTurn(0.33)
-        ChangeColorCarAccelerate(0.66)
-        ChangeColorRightTurn(1)
+        ChangeColorLeftTurn(0)
+        ChangeColorCarAccelerate(0)
+        ChangeColorRightTurn(0)
     }
     
     /*
