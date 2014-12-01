@@ -18,18 +18,6 @@ class FirstViewController: UIViewController {
     // Accelerometer initialization
     let motionManager = CMMotionManager()
     
-    var currentMaxAccelX: Double = 0.0
-    var currentMaxAccelY: Double = 0.0
-    var currentMaxAccelZ: Double = 0.0
-    
-    @IBOutlet weak var accX: UILabel!
-    @IBOutlet weak var accY: UILabel!
-    @IBOutlet weak var accZ: UILabel!
-    
-    @IBOutlet weak var maxAccX: UILabel!
-    @IBOutlet weak var maxAccY: UILabel!
-    @IBOutlet weak var maxAccZ: UILabel!
-    
     
     // UI element declarations
     @IBOutlet weak var RightColor: UIImageView!
@@ -84,38 +72,11 @@ class FirstViewController: UIViewController {
     // Stops the accelerometer if it's already running
     func stopAccelerometer () {
         self.motionManager.stopAccelerometerUpdates()
-        (currentMaxAccelX, currentMaxAccelY, currentMaxAccelZ) = (0, 0, 0)
     }
     
-    // Reset accelerometer maximum data
-    @IBAction func resetAccData(sender: AnyObject) {
-        currentMaxAccelX = 0.0
-        currentMaxAccelY = 0.0
-        currentMaxAccelZ = 0.0
-    }
     
     // Processes data taken from the accelerometer
     func outputAccelerationData(acceleration:CMAcceleration) {
-        
-        // Accelerometer data screen display
-        accX.text = NSString(format:"%.4f", acceleration.x)
-        if fabs(acceleration.x) > fabs(currentMaxAccelX) {
-            currentMaxAccelX = acceleration.x
-            maxAccX.text = NSString(format:"%.4f", currentMaxAccelX)
-        }
-        
-        accY.text = NSString(format:"%.4f", acceleration.y)
-        if fabs(acceleration.y) > fabs(currentMaxAccelY) {
-            currentMaxAccelY = acceleration.y
-            maxAccY.text = NSString(format:"%.4f", currentMaxAccelY)
-        }
-        
-        accZ.text = NSString(format:"%.4f", acceleration.z)
-        if fabs(acceleration.z) > fabs(currentMaxAccelZ) {
-            currentMaxAccelZ = acceleration.z
-            maxAccZ.text = NSString(format:"%.4f", currentMaxAccelZ)
-        }
-
         
         // Change arrow colors
         if acceleration.x > Double(0) {
