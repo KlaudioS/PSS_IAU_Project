@@ -42,6 +42,11 @@ class FirstViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // Reseting colors to green by default
+        ChangeColorLeftTurn(0)
+        ChangeColorCarAccelerate(0)
+        ChangeColorRightTurn(0)
+        
         // Check if the accelerometer is inactive and available
         if self.motionManager.accelerometerActive {
             self.stopAccelerometer()
