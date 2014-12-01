@@ -11,6 +11,7 @@ import CoreMotion
 
 class FirstViewController: UIViewController {
     
+    let userDefaults = NSUserDefaults.standardUserDefaults();
     // Constants
     let accelerometerUpdateInterval = 0.2
     
@@ -24,7 +25,9 @@ class FirstViewController: UIViewController {
     @IBOutlet weak var LeftColor: UIImageView!
     @IBOutlet weak var carColor: UIImageView!
     
-    
+    var limitAcelerate:CGFloat = 0
+    var limitLeftTurn:CGFloat = 0
+    var limitRightTurn:CGFloat = 0
   
     
     override func viewDidLoad() {
@@ -56,6 +59,19 @@ class FirstViewController: UIViewController {
                 println("\(error)")
             }
         })
+        
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        //Loading
+         limitAcelerate = CGFloat(userDefaults.floatForKey("LimitAcel"))
+         limitLeftTurn =  CGFloat(userDefaults.floatForKey("LimitLeft"))
+         limitRightTurn =  CGFloat(userDefaults.floatForKey("LimitRight"))
+         ChangeColorCarAccelerate(limitAcelerate)
+         ChangeColorLeftTurn(limitLeftTurn)
+         ChangeColorRightTurn(limitRightTurn)
         
     }
     
